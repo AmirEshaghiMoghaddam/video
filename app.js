@@ -16,3 +16,11 @@ btn.addEventListener("click", function () {
           video.play();
      }
 });
+
+// preloader
+// Differences. The DOMContentLoaded event fires when all the nodes in the page have been constructed in the DOM tree. The load event fires when all resources such as images and sub-frames are loaded completely.
+
+const preloader = document.querySelector('.preloader');
+window.addEventListener('load', function () {
+     preloader.classList.add('hide-preloader');
+})
